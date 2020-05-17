@@ -9,6 +9,7 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfig {
 	public static final String QUEUE_NAME = "nags-hello-queue";
+	public static final String QUEUE_NAME_2 = "nags-send-receive";
 
 	@Bean
 	public MessageConverter messageConverter() {
