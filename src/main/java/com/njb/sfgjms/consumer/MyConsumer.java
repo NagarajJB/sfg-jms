@@ -23,7 +23,7 @@ public class MyConsumer {
 	private final JmsTemplate jmsTemplate;
 
 	@JmsListener(destination = JmsConfig.QUEUE_NAME)
-	public void listen(@Payload MyMessage myMessage, @Headers MessageHeaders headers, Message message) {
+	public void listen(@Payload MyMessage myMessage, @Headers MessageHeaders headers, Message message, org.springframework.messaging.Message springMessage) {
 		/*
 		 * System.out.println("Got a message!"); System.out.println(myMessage);
 		 */
